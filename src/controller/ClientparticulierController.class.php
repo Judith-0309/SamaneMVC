@@ -22,7 +22,7 @@ class ClientparticulierController extends Controller{
 
     public function index(){
 
-        return $this->view->load("clientparticulier/addClientparticulier");
+        return $this->view->load("clientparticulier/index");
     }
     /** 
      * url pattern for this method

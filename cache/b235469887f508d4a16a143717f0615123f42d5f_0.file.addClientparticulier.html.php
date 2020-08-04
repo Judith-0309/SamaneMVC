@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2020-08-04 15:58:23
+/* Smarty version 3.1.30, created on 2020-08-04 16:18:21
   from "C:\xampp\htdocs\SamaneMVC\src\view\clientparticulier\addClientparticulier.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5f29697f845c89_63871119',
+  'unifunc' => 'content_5f296e2d30c922_46889064',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b235469887f508d4a16a143717f0615123f42d5f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\SamaneMVC\\src\\view\\clientparticulier\\addClientparticulier.html',
-      1 => 1596549486,
+      1 => 1596550290,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f29697f845c89_63871119 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f296e2d30c922_46889064 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <!DOCTYPE html>
@@ -56,7 +56,7 @@ public/css/samane.css"/>
             </nav>
 
                 <form action='<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Clientparticulier/addClientparticulier' method="POST"  id="myform">
+Clientparticulier/add' method="POST"  id="myform">
                     <fieldset class="container"><br><br />
                         <legend id="open">Créer Client Particulier</legend>
 

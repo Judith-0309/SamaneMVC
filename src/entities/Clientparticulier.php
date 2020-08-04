@@ -30,7 +30,7 @@ class Clientparticulier
     private $salarie;
      /** @Column(type="text") **/ 
     private $salarie_actuel;
-     /** @Column(type="decimal") **/ 
+     /** @Column(type="string") **/ 
     private $nom_employeur;
      /** @Column(type="string") **/ 
     private $cni;
