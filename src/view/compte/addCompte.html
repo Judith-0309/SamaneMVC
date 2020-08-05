@@ -28,6 +28,13 @@
                     <li><a href="">Virement</a></li>
                 </ul>
         </nav>
+            {if isset($ok)}
+               {if $ok != 0}
+                <div class="alert alert-success">Données ajoutées!</div>
+                {else}
+                <div class="alert alert-danger">Erreur!</div>
+                {/if}
+            {/if}
    
             <form action="{$url_base}Compte/add" method="POST" id="myformCompte">
                 <fieldset class="container"><br/>
@@ -67,7 +74,7 @@
                 </fieldset>
        
                     <div class="button"><br />
-                        <input type="submit" value="ENVOYER" onclick="return validate()"/><br/>
+                        <input type="submit" value="ENVOYER" name="envoyer" onclick="return validate()"/><br/>
                         <input type="reset" value="ANNULER"/>
 
                     </div><br/>

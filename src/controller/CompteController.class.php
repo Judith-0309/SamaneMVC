@@ -17,7 +17,7 @@ class CompteController extends Controller{
     }
     /** 
      * url pattern for this method
-     * localhost/projectName/Clientparticulier/
+     * localhost/projectName/Compte/
      */
 
     public function index(){
@@ -43,7 +43,7 @@ class CompteController extends Controller{
     }
     /** 
      * url pattern for this method
-     * localhost/projectName/Clientparticulier/liste
+     * localhost/projectName/Compte/liste
      */
     public function liste(){
         $tdb = new CompteRepository();
@@ -60,10 +60,13 @@ class CompteController extends Controller{
         if(isset($_POST['envoyer']))
         {
             extract($_POST);
+           // var_dump($_POST);
+           // die;
             $data['ok'] = 0;
            
                 
                 $compteObject = new Compte();
+                $compteObject->setTypeCompte($_POST["typeCompte"]);
                 $compteObject->setNumeroCompte($_POST["NumeroCompte"]);
                 $compteObject->setCleRib($_POST["CleRib"]);
                 $compteObject->setEtatCompte($_POST["EtatCompte"]);
@@ -82,7 +85,7 @@ class CompteController extends Controller{
     
      /** 
      * url pattern for this method
-     * localhost/projectName/Clientparticulier/update
+     * localhost/projectName/Compte/update
      */
     public function update(){
         $tdb = new CompteRepository();
@@ -102,7 +105,7 @@ class CompteController extends Controller{
     
      /** 
      * url pattern for this method
-     * localhost/projectName/Clientparticulier/delete/value
+     * localhost/projectName/Compte/delete/value
      */
     public function delete($id){
         

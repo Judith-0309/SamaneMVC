@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2020-08-04 19:04:27
+/* Smarty version 3.1.30, created on 2020-08-05 12:40:42
   from "C:\xampp\htdocs\SamaneMVC\src\view\compte\addCompte.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5f29951b68ecf9_08867030',
+  'unifunc' => 'content_5f2a8caa6cc358_70153367',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8e241c4c05c160f657f0375b3ef0ae01383de0f4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\SamaneMVC\\src\\view\\compte\\addCompte.html',
-      1 => 1596560638,
+      1 => 1596624025,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f29951b68ecf9_08867030 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f2a8caa6cc358_70153367 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,6 +54,13 @@ public/css/samane.css"/>
                     <li><a href="">Virement</a></li>
                 </ul>
         </nav>
+            <?php if (isset($_smarty_tpl->tpl_vars['ok']->value)) {?>
+               <?php if ($_smarty_tpl->tpl_vars['ok']->value != 0) {?>
+                <div class="alert alert-success">Données ajoutées!</div>
+                <?php } else { ?>
+                <div class="alert alert-danger">Erreur!</div>
+                <?php }?>
+            <?php }?>
    
             <form action="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Compte/add" method="POST" id="myformCompte">
@@ -94,7 +101,7 @@ Compte/add" method="POST" id="myformCompte">
                 </fieldset>
        
                     <div class="button"><br />
-                        <input type="submit" value="ENVOYER" onclick="return validate()"/><br/>
+                        <input type="submit" value="ENVOYER" name="envoyer" onclick="return validate()"/><br/>
                         <input type="reset" value="ANNULER"/>
 
                     </div><br/>
