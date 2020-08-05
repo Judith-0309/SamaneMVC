@@ -75,6 +75,8 @@ class ClientparticulierController extends Controller{
                 $clientparticulierObject->setSalaireActuel($_POST["salaire_actuel"]);
                 $clientparticulierObject->setNomEmployeur($_POST["nom_employeur"]);
                 $clientparticulierObject->setCni($_POST["cni"]);
+                
+
        
 
                 $ok = $tdb->addClientparticulier($clientparticulierObject);

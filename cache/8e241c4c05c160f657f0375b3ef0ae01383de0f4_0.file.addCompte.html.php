@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2020-08-05 12:40:42
+/* Smarty version 3.1.30, created on 2020-08-05 13:22:54
   from "C:\xampp\htdocs\SamaneMVC\src\view\compte\addCompte.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5f2a8caa6cc358_70153367',
+  'unifunc' => 'content_5f2a968e89baf8_46257725',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8e241c4c05c160f657f0375b3ef0ae01383de0f4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\SamaneMVC\\src\\view\\compte\\addCompte.html',
-      1 => 1596624025,
+      1 => 1596626566,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f2a8caa6cc358_70153367 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f2a968e89baf8_46257725 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -29,10 +29,8 @@ function content_5f2a8caa6cc358_70153367 (Smarty_Internal_Template $_smarty_tpl)
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-public/css/bootstrap.min.css"/>
-		<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-public/css/samane.css"/>
+        <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/css/compte.css">
     
     <title>Gestion des Comptes</title>
 
@@ -42,7 +40,8 @@ public/css/samane.css"/>
     
         <nav>
 
-            <img src="public/img/bplogo.png" alt="logo BP" class="img">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/image/bplogo.png" alt="logo BP" class="img">
 
                 <h1>BANQUE DU PEUPLE</h1>
 

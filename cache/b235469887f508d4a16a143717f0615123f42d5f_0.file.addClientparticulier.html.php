@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2020-08-04 16:18:21
+/* Smarty version 3.1.30, created on 2020-08-05 14:51:10
   from "C:\xampp\htdocs\SamaneMVC\src\view\clientparticulier\addClientparticulier.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5f296e2d30c922_46889064',
+  'unifunc' => 'content_5f2aab3e0000e5_70723574',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b235469887f508d4a16a143717f0615123f42d5f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\SamaneMVC\\src\\view\\clientparticulier\\addClientparticulier.html',
-      1 => 1596550290,
+      1 => 1596631844,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f296e2d30c922_46889064 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f2aab3e0000e5_70723574 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <!DOCTYPE html>
@@ -30,10 +30,8 @@ function content_5f296e2d30c922_46889064 (Smarty_Internal_Template $_smarty_tpl)
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-public/css/bootstrap.min.css"/>
-		<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-public/css/samane.css"/>
+        <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/css/particulier.css">
  
    
         <title>CLIENT PARTICULIER</title>
@@ -42,7 +40,8 @@ public/css/samane.css"/>
 
         <body>
             <nav>
-                <img src="public/img/bplogo.png" alt="logo BP" class="img">  
+                <img src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/image/bplogo.png" alt="logo BP" class="img">  
         
                     <h1>BANQUE DU PEUPLE</h1>
 
@@ -54,6 +53,13 @@ public/css/samane.css"/>
                             <li><a href="">Virement</a></li>
                         </ul>
             </nav>
+                 <?php if (isset($_smarty_tpl->tpl_vars['ok']->value)) {?>
+                    <?php if ($_smarty_tpl->tpl_vars['ok']->value != 0) {?>
+                       <div class="alert alert-success">Données ajoutées!</div>
+                    <?php } else { ?>
+                        <div class="alert alert-danger">Erreur!</div>
+                    <?php }?>
+                 <?php }?>
 
                 <form action='<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Clientparticulier/add' method="POST"  id="myform">
@@ -114,7 +120,8 @@ Clientparticulier/add' method="POST"  id="myform">
                         </div>
                 </form>
                     <?php echo '<script'; ?>
- src="public/js/mainP.js"><?php echo '</script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/js/mainP.js"><?php echo '</script'; ?>
 >
 
     </body>
