@@ -160,14 +160,7 @@ public function __construct()
            $this->cni=$cni;
     }
 
-    public function getNumeroCompte()
-    {
-            return $this->numeroCompte;
-    }
-    public function setNumeroCompte($numeroCompte)
-    {
-           $this->numeroCompte=$numeroCompte;
-    }
+    
 }
 
 
