@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2020-08-03 18:43:28
+/* Smarty version 3.1.30, created on 2020-08-05 18:37:10
   from "C:\xampp\htdocs\SamaneMVC\src\view\test\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5f283eb069da50_75304289',
+  'unifunc' => 'content_5f2ae0364988b8_27219285',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '11e1707f45eb794b28ddeee93d550c5c0ba7050c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\SamaneMVC\\src\\view\\test\\index.html',
-      1 => 1572663145,
+      1 => 1596645426,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f283eb069da50_75304289 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f2ae0364988b8_27219285 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -48,7 +48,7 @@ public/image/logo.jpg" class="resize" />
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 ">Accueil</a></li>
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Test/index">Menu test page </a></li>
+Clientparticulier/index">Client Particulier </a></li>
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Test/getId/1">Menu test get id page </a></li>
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>

@@ -144,7 +144,7 @@ public function __construct()
 
         public function getNomEmployeur()
     {
-            return $this->nomEmployeur;
+            return $this->nom_employeur;
     }
     public function setNomEmployeur($nom_employeur)
     {
