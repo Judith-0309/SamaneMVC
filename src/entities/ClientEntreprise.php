@@ -98,7 +98,7 @@ public function getId()
 
        public function getRaison_Sociale()
     {
-        return $this->Raison_Sociale;
+        return $this->raison_Sociale;
     }
 
     public function setRaison_Sociale($raison_Sociale)

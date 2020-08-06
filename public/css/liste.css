@@ -15,7 +15,7 @@
 }
 h1{
     position: relative;
-    left: 580px;
+   
    
   
   
@@ -29,7 +29,7 @@ h1{
 nav{
     background: #00C3C7;
     height: 70px;
-    margin-top:60px;
+    margin-top:10px;
        
 }
 
@@ -65,15 +65,19 @@ nav{
 
 }
 
-.body nav,ul li:hover ul{
-    visibility: visible;
- 
-}
-li:hover{
-    background-color:#97dcdd;
-    color:white;
-    transition: all 0.5s ease;
+
+
     
+
+.lien{
+    text-align: center;
+    margin-top: 40px;
+   
+}
+.lien:hover{
+    background-color:#97dcdd;
+    
+    transition: all 0.5s ease;
 }
 
         

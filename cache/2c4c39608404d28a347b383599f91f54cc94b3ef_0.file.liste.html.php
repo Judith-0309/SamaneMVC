@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2020-08-06 18:17:00
-  from "C:\xampp\htdocs\SamaneMVC\src\view\clientparticulier\liste.html" */
+/* Smarty version 3.1.30, created on 2020-08-06 18:50:00
+  from "C:\xampp\htdocs\SamaneMVC\src\view\clientEntreprise\liste.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5f2c2cfcd511f9_01503452',
+  'unifunc' => 'content_5f2c34b8e0a954_06377659',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'ca1cc468a201782f2da59a05792bfb84eb509910' => 
+    '2c4c39608404d28a347b383599f91f54cc94b3ef' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\SamaneMVC\\src\\view\\clientparticulier\\liste.html',
-      1 => 1596730543,
+      0 => 'C:\\xampp\\htdocs\\SamaneMVC\\src\\view\\clientEntreprise\\liste.html',
+      1 => 1596732595,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f2c2cfcd511f9_01503452 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f2c34b8e0a954_06377659 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 <!-- ctrl+shift+F pour les indentations  -->
 <head>
 	<meta charset="UTF-8">
-	<title>Liste Client Particulier</title>
+	<title>Liste Client Entreprise</title>
 	<!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
  vous permet de recupérer le chemin de votre site web  -->
 	<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
@@ -57,54 +57,49 @@ public/image/bplogo.png" class="resize"/>
 			</ul>
 		</nav>
 
-	<?php if (isset($_smarty_tpl->tpl_vars['clientparticuliers']->value)) {?>
-	<?php if ($_smarty_tpl->tpl_vars['clientparticuliers']->value != null) {?>
+	<?php if (isset($_smarty_tpl->tpl_vars['clientEntreprises']->value)) {?>
+		<?php if ($_smarty_tpl->tpl_vars['clientEntreprises']->value != null) {?>
 	<table class="table table-bordered table-stripped">
 		<tr>
 			<th>Id</th>
-			<th>Nom</th>
-			<th>Prenom</th>
-			<th>Genre</th>
-			<th>Email</th>
+			<th>NomEntreprise</th>
+			<th>Ninea</th>
+			<th>Adresse</th>
+			<th>Raison_Sociale</th>
 			<th>Adresse</th>
 			<th>Telephone</th>
-			<th>Salarie</th>
-			<th>Salaire_actuel</th>
-			<th>Nom_employeur</th>
-			<th>Cni</th>
+			<th>Email</th>
+			<th>RegistreCom</th>
 			<th>Action</th>
 		</tr>
 		<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['clientparticuliers']->value, 'clientparticulier');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['clientEntreprises']->value, 'clientEntreprise');
 if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['clientparticulier']->value) {
+foreach ($_from as $_smarty_tpl->tpl_vars['clientEntreprise']->value) {
 ?>
 		<tr>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getId();?>
+			<td><?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value->getId();?>
 </td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getNom();?>
+			<td><?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value->getNomEntreprise();?>
 </td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getPrenom();?>
+			<td><?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value->getNinea();?>
 </td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getGenre();?>
+			<td><?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value->getAdresse();?>
 </td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getEmail();?>
+			<td><?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value->getRaison_Sociale();?>
 </td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getAdresse();?>
+			<td><?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value->getAdresse();?>
 </td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getTelephone();?>
+			<td><?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value->getTelephone();?>
 </td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getSalarie();?>
+			<td><?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value->getEmail();?>
 </td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getSalaireActuel();?>
+			<td><?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value->getRegistreCom();?>
 </td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getNomEmployeur();?>
-</td>
-			<td><?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getCni();?>
-</td>
+			
 			<td><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-clientparticulier/edit/<?php echo $_smarty_tpl->tpl_vars['clientparticulier']->value->getId();?>
-">Editer</a></td>
+clientEntreprise}/edit/<?php echo $_smarty_tpl->tpl_vars['clientEntreprise']->value;?>
+->getId()}">Editer</a></td>
 		</tr>
 		<?php
 }
@@ -121,7 +116,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 	<!-- L'url de redirection pour ajouter un nouveau client particulier à partir de cette page  -->
 	<div class="lien">
 	<a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-clientparticulier/add">Ajout d'un clientparticulier</a>
+clientEntreprise/add">Ajout d'un Entreprise</a>
     </div>
 
 </body>

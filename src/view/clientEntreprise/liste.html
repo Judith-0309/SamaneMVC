@@ -2,7 +2,7 @@
 <!-- ctrl+shift+F pour les indentations  -->
 <head>
 	<meta charset="UTF-8">
-	<title>Liste Client Particulier</title>
+	<title>Liste Client Entreprise</title>
 	<!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
 	<link rel="stylesheet" href="{$url_base}public/css/liste.css">
 
@@ -24,37 +24,34 @@
 			</ul>
 		</nav>
 
-	{if isset($clientparticuliers)}
-	{if $clientparticuliers != null}
+	{if isset($clientEntreprises)}
+		{if $clientEntreprises != null}
 	<table class="table table-bordered table-stripped">
 		<tr>
 			<th>Id</th>
-			<th>Nom</th>
-			<th>Prenom</th>
-			<th>Genre</th>
-			<th>Email</th>
+			<th>NomEntreprise</th>
+			<th>Ninea</th>
+			<th>Adresse</th>
+			<th>Raison_Sociale</th>
 			<th>Adresse</th>
 			<th>Telephone</th>
-			<th>Salarie</th>
-			<th>Salaire_actuel</th>
-			<th>Nom_employeur</th>
-			<th>Cni</th>
+			<th>Email</th>
+			<th>RegistreCom</th>
 			<th>Action</th>
 		</tr>
-		{foreach from=$clientparticuliers item=clientparticulier}
+		{foreach from=$clientEntreprises item=clientEntreprise}
 		<tr>
-			<td>{$clientparticulier->getId()}</td>
-			<td>{$clientparticulier->getNom()}</td>
-			<td>{$clientparticulier->getPrenom()}</td>
-			<td>{$clientparticulier->getGenre()}</td>
-			<td>{$clientparticulier->getEmail()}</td>
-			<td>{$clientparticulier->getAdresse()}</td>
-			<td>{$clientparticulier->getTelephone()}</td>
-			<td>{$clientparticulier->getSalarie()}</td>
-			<td>{$clientparticulier->getSalaireActuel()}</td>
-			<td>{$clientparticulier->getNomEmployeur()}</td>
-			<td>{$clientparticulier->getCni()}</td>
-			<td><a href="{$url_base}clientparticulier/edit/{$clientparticulier->getId()}">Editer</a></td>
+			<td>{$clientEntreprise->getId()}</td>
+			<td>{$clientEntreprise->getNomEntreprise()}</td>
+			<td>{$clientEntreprise->getNinea()}</td>
+			<td>{$clientEntreprise->getAdresse()}</td>
+			<td>{$clientEntreprise->getRaison_Sociale()}</td>
+			<td>{$clientEntreprise->getAdresse()}</td>
+			<td>{$clientEntreprise->getTelephone()}</td>
+			<td>{$clientEntreprise->getEmail()}</td>
+			<td>{$clientEntreprise->getRegistreCom()}</td>
+			
+			<td><a href="{$url_base}clientEntreprise}/edit/{$clientEntreprise}->getId()}">Editer</a></td>
 		</tr>
 		{/foreach}
 	</table>
@@ -65,7 +62,7 @@
 	</div>
 	<!-- L'url de redirection pour ajouter un nouveau client particulier à partir de cette page  -->
 	<div class="lien">
-	<a href="{$url_base}clientparticulier/add">Ajout d'un clientparticulier</a>
+	<a href="{$url_base}clientEntreprise/add">Ajout d'un Entreprise</a>
     </div>
 
 </body>
